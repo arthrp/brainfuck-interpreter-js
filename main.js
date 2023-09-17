@@ -1,4 +1,4 @@
-function interpretAndOutput(e){
+function interpretAndOutput(){
     const code = document.querySelector("#code-txt").value;
 
     const result = brainfuckInterpreter(code);
@@ -7,7 +7,7 @@ function interpretAndOutput(e){
 }
 
 function brainfuckInterpreter(code) {
-    let tape = Array(30000).fill(0);
+    const tape = Array(30000).fill(0);
     let ptr = 0;
     let codePtr = 0;
     let output = "";
@@ -61,3 +61,5 @@ function brainfuckInterpreter(code) {
 
     return output;
 }
+
+interpretAndOutput();
