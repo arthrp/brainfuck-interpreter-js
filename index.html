@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #main-container{
+            margin-top:100px;
+        }
+
+        #code-txt{
+            min-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container" class="container d-flex justify-content-center align-items-center">
+        <div class="text-center">
+            <textarea id="code-txt" class="form-control mb-3" rows="6" cols="10" placeholder="Enter brainfuck code here..." oninput="interpretAndOutput()"></textarea>
+
+            <h2>Result</h2>
+            <div id="result">Execution output will appear here</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
